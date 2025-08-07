@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+
+// Header Footer Col
+import Header from "@layout/Header/index.jsx";
+import Footer from "@layout/Footer/index";
+
+// Pages Link
+import Home from "@pages/home";
+
+// CSS
+import "./assets/css/style.css";
+
+function BodyClassHandler() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const pageTitle = location.pathname.replace("", "") || "";
+    document.body.className = `page-${pageTitle}`;
+  }, [location.pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <BodyClassHandler />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
