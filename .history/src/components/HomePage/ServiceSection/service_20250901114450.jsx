@@ -3,7 +3,7 @@ import Styles from "./service.module.css";
 import { ArrowUpRight } from "lucide-react";
 
 // ✅ Import all images from index.js
-import { UIUX, fullstack, eCommerce, web, wordpress, shopify } from "@Images/index";
+import { UIUX, fullstack, eCommerce, web, wordpress, shopify } from "../../assets/images";
 
 const services = [
   {

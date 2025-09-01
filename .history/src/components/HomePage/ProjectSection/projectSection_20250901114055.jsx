@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../ProjectSection/projectSection.module.css";
-import {Framer, Coinbase, Atlassion} from '@Images/index';
+import {Framer, Coinbase, Atlassion} from "@Images/index";
 const CallToAction = () => {
 
     const logos = [
