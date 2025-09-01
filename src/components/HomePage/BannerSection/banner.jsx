@@ -7,7 +7,8 @@ function Service() {
         <div className={'ServiceSection'}>
            
         <div className={Styles.free}>
-            Styles
+
+            
         </div>
         </div>
     )
