@@ -8,7 +8,7 @@ import wordpress from '../assets/images/service/wordpress.svg';
 import shopify from '../assets/images/service/shopify.svg';
 import Framer from '../assets/images/project/framer.svg'
 import Coinbase from '../assets/images/project/coinbase.svg'
-import Atlassion from '../assets/images/project/Atlassian.svg'
+import Atlassion from '../assets/images/project/Atlassion.svg'
 import Medium from '../assets/images/project/medium.svg'
 import Tinder from '../assets/images/project/tinder.svg'
 

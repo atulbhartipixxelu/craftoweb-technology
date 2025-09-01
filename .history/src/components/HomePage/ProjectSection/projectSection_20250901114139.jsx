@@ -28,7 +28,7 @@ const CallToAction = () => {
                         <image key={index} src={logo.src} alt={logo.alt} />
                     ))}
                 </div>
-            </div> 
+            </div>
         </section>
     );
 };

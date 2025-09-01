@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../ProjectSection/projectSection.module.css";
-import {Framer, Coinbase, Atlassion} from '@Images/index';
+import {Framer, Coinbase, Atlassion} from "../../../Images/index";
 const CallToAction = () => {
 
     const logos = [
@@ -28,7 +28,7 @@ const CallToAction = () => {
                         <image key={index} src={logo.src} alt={logo.alt} />
                     ))}
                 </div>
-            </div> 
+            </div>
         </section>
     );
 };

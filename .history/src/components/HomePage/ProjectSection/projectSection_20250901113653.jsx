@@ -1,12 +1,12 @@
 import React from "react";
 import Styles from "../ProjectSection/projectSection.module.css";
-import {Framer, Coinbase, Atlassion} from '@Images/index';
+import {Framer, Coinbase, atlassion} from "@Images/index";
 const CallToAction = () => {
 
     const logos = [
         <image src={Framer} alt='Framer' />,
         <image src={Coinbase}alt='Framer' />,
-        <image src={Atlassion} alt='Framer' />,
+        <image src={atlassion} alt='Framer' />,
         <image src={Framer} alt='Framer' />,
         <image src={Framer} alt='Framer' />,
     ];
@@ -28,7 +28,7 @@ const CallToAction = () => {
                         <image key={index} src={logo.src} alt={logo.alt} />
                     ))}
                 </div>
-            </div> 
+            </div>
         </section>
     );
 };

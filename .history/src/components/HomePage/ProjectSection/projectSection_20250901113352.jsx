@@ -1,14 +1,14 @@
 import React from "react";
 import Styles from "../ProjectSection/projectSection.module.css";
-import {Framer, Coinbase, Atlassion} from '@Images/index';
+
 const CallToAction = () => {
 
     const logos = [
-        <image src={Framer} alt='Framer' />,
-        <image src={Coinbase}alt='Framer' />,
-        <image src={Atlassion} alt='Framer' />,
-        <image src={Framer} alt='Framer' />,
-        <image src={Framer} alt='Framer' />,
+        <img src={Framer} alt={framer} />,
+        <img src={Coinbase} alt={coinbase} />,
+        <img src={atlassion} alt={title} />,
+        <img src={Framer} alt={title} />,
+        <img src={Framer} alt={title} />,
     ];
     return (
         <section className={Styles.ctaSection}>
@@ -25,10 +25,10 @@ const CallToAction = () => {
 
                 <div className={Styles.logoRow}>
                     {logos.map((logo, index) => (
-                        <image key={index} src={logo.src} alt={logo.alt} />
+                        <img key={index} src={logo.src} alt={logo.alt} />
                     ))}
                 </div>
-            </div> 
+            </div>
         </section>
     );
 };
